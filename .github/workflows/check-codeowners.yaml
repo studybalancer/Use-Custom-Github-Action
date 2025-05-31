@@ -11,6 +11,6 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Run CODEOWNERS Check
-        uses: ./.github/actions/check-codeowners
+        uses: studybalancer/Custom-Github-Action/github-custom-check-codeowners-action@main
         with:
           slack_webhook_url: ${{ secrets.SLACK_WEBHOOK_URL }}
